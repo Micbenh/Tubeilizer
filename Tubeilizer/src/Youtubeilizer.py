@@ -4,7 +4,7 @@ import sys
 sys.path.append(os.getcwd())
 
 from utils.plyaround import general_channel_info 
-apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
+apikey = ''
 from googleapiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=apikey)
 
