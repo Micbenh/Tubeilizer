@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-import json
-from googleapiclient.discovery import build
 
-apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
-youtube = build('youtube','v3', developerKey=apikey)
-=======
 import os 
 import sys
 sys.path.append(os.getcwd())
@@ -28,9 +22,4 @@ class YBlizer():
 
 
 a = YBlizer()
-<<<<<<< HEAD
-#print(a.channel_overview())
-
-=======
 print(a.genChannelInfo())
->>>>>>> feat/ChannelStupidInfo
