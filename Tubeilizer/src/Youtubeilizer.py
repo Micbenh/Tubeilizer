@@ -1,7 +1,8 @@
+import os 
+import sys
+sys.path.append(os.getcwd())
 
-
-from utils.plyaround import *
-
+from utils.plyaround import general_channel_info 
 apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
 from googleapiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=apikey)
@@ -15,11 +16,7 @@ class YBlizer():
        
     def genChannelInfo(self):
         user = input("Enter Youtube Channel Username: ")
-        request = youtube.channels().list(
-            part='statistics',
-            forUsername=user
-        )
-        response = request.execute()
+        return general_channel_info(user)
 
 
 
