@@ -1,7 +1,10 @@
-apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
+import json
+from googleapiclient.discovery import build
+
+apikey = ''
+youtube = build('youtube','v3', apikey)
 
 class YBlizer():
-
     @staticmethod
     def display_menu():
         return """Welcome to YOUTUBELIZER
