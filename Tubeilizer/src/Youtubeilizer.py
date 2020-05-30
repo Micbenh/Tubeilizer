@@ -1,8 +1,8 @@
 import json
 from googleapiclient.discovery import build
 
-apikey = ''
-youtube = build('youtube','v3', apikey)
+apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
+youtube = build('youtube','v3', developerKey=apikey)
 
 class YBlizer():
     @staticmethod
@@ -13,4 +13,5 @@ class YBlizer():
 
 
 a = YBlizer()
-print(a.display_menu())
+#print(a.channel_overview())
+
