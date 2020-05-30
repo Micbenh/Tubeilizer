@@ -7,7 +7,6 @@ from utils.plyaround import general_channel_info
 apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
 from googleapiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=apikey)
->>>>>>> feat/ChannelStupidInfo
 
 class YBlizer():
     @staticmethod
