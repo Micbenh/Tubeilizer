@@ -1,3 +1,4 @@
+apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
 
 class YBlizer():
 
