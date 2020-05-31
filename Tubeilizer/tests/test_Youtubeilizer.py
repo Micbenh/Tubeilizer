@@ -6,7 +6,7 @@ print(os.getcwd())
 sys.path.append(os.getcwd())
 print(sys.path)
 import pytest
-from Yout.Youtubeilizer import YBlizer
+from src.Youtubeilizer import YBlizer
 
 
 def test_menu_display(youb):
