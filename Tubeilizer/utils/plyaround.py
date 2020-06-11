@@ -1,4 +1,5 @@
-apikey = 'AIzaSyDdRnkdRRJOXD5K13MxsmtrJMAmLqu045g'
+apikey = 'AIzaSyADadl9r_gdIqUVUD3T8OYZBJTqU66sjaE'
+cid = 'UC-lHJZR3Gqxm24_Vd_AJ5Yw'
 
 from googleapiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=apikey)
@@ -45,25 +46,9 @@ def channel_latest_videos(ChannelId, nvideos):
         print(items['snippet']['title'])
 
 
-#stub for playing around
-request = youtube.subscriptions().list(part='subscriberSnippet',channelId='UC-lHJZR3Gqxm24_Vd_AJ5Yw')
-#response = request.execute()
-#print(response)
+def get_playlist_duration():
+    pl_request = youtube.playlists().list(part='contentDetails, snippet', channelId=cid)
+    pl_response = pl_request.execute()
+    print(pl_response)
 
-#download captions
-request = youtube.captions().list(part='snippet' ,videoId='429WCrxZqe0')
-#response = request.execute()
-#print(response)
-
-
-
-#latest videos
-request = youtube.activities().list(part="snippet" ,channelId="UC-lHJZR3Gqxm24_Vd_AJ5Yw", maxResults=4)
-#response = request.execute()
-#print(response)
-'''
-data = response['items']
-for items in data:
-    print(items['snippet']['title'])'''
-
-#channel_latest_videos('UC-lHJZR3Gqxm24_Vd_AJ5Yw', 4)
+get_playlist_duration()
