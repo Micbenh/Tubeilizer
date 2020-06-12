@@ -4,7 +4,7 @@ import sys
 sys.path.append(os.getcwd())
 
 from utils.plyaround import general_channel_info, get_playlist_duration
-apikey = 'AIzaSyADadl9r_gdIqUVUD3T8OYZBJTqU66sjaE'
+apikey = 'APYKEY'
 from googleapiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=apikey)
 
