@@ -26,5 +26,4 @@ class YBlizer():
 
 
 a = YBlizer()
-print(a.Playlist_duration())
 

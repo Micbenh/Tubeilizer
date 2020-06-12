@@ -91,4 +91,3 @@ def get_playlist_duration(playlistID):
     hours, minutes = divmod(minutes, 60)
     return f"The playlist duration is {hours} hours {minutes} minutes and {seconds} seconds"
 
-print(get_playlist_duration('PLYH8WvNV1YElE78ql2vvcOURM1tve_njn'))
