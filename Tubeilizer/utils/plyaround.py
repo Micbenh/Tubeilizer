@@ -1,7 +1,7 @@
 import re
 from datetime import timedelta
 
-apikey = 'AIzaSyADadl9r_gdIqUVUD3T8OYZBJTqU66sjaE'
+apikey = ''
 cid = 'UC-lHJZR3Gqxm24_Vd_AJ5Yw'
 pid = 'PLYH8WvNV1YElE78ql2vvcOURM1tve_njn'
 
